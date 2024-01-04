@@ -20,6 +20,7 @@ class AppConstants{
   static const String heideBreadsAndBunsPng = "assets/png/heide_breads_buns.png";
   static const String baguettesPng = "assets/png/baguettes.png";
   static const String glutenLowBreadPng = "assets/png/gluten_low_bread.png";
+  static const String editIconPng = "assets/png/edit_icon.png";
 
 
   // long texts
