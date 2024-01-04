@@ -64,7 +64,7 @@ class WalletScreen extends StatelessWidget {
               child: CustomButton(
                 onPressed: () {},
                 text: "Add More Credits",
-                width: 125.w,
+                width: 145.w,
                 buttonColor: AppColors.darkGrey,
               ),
             ),

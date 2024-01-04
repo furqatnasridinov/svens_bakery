@@ -8,6 +8,7 @@ class AppConstants{
   static const String profileLogoSvg = "assets/svg/profile.svg";
   static const String playLogoSvg = "assets/svg/play_button.svg";
   static const String greenStarsSvg = "assets/svg/green_stars.svg";
+  static const String circleDollarSvg = "assets/svg/circle_dollar.svg";
   
 
 
