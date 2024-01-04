@@ -7,6 +7,7 @@ class AppConstants{
   static const String reorderLogoSvg = "assets/svg/reorder.svg";
   static const String profileLogoSvg = "assets/svg/profile.svg";
   static const String playLogoSvg = "assets/svg/play_button.svg";
+  static const String greenStarsSvg = "assets/svg/green_stars.svg";
   
 
 
@@ -23,4 +24,5 @@ class AppConstants{
 
   // long texts
   static const String glutenLowdescribtion = "Breads are made of only wholegrain grains and seeds ,are baking yeast free and vegan.";
+  static const String walletPageLongText = "After purchasing one just show the screen to order or get an item They also apply to pickups and delivery orders";
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:svens_bakery/infrastructure/services/app_colors.dart';
 import '../../../components/components.dart';
 
 class GridviewItem extends StatelessWidget {
@@ -44,6 +45,8 @@ class GridviewItem extends StatelessWidget {
               onPressed: () {},
               text: "Order Now",
               height: 30.h,
+              buttonColor: AppColors.darkGrey,
+              textColor: AppColors.greenStyle,
             ),
           ),
           3.verticalSpace,
