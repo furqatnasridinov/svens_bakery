@@ -10,9 +10,10 @@ class DealsTabScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: PoppinsCustomText(
-        text: "Here will be deals",
-      )),
+        child: PoppinsCustomText(
+          text: "Here will be deals",
+        ),
+      ),
     );
   }
 }
