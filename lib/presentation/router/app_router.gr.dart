@@ -15,10 +15,30 @@ abstract class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
+    BakeryItemTabRoute.name: (routeData) {
+      final args = routeData.argsAs<BakeryItemTabRouteArgs>(
+          orElse: () => const BakeryItemTabRouteArgs());
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: BakeryItemTabScreen(key: args.key),
+      );
+    },
     BottomNavigationHandlerRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const BottomNavigationHandlerScreen(),
+      );
+    },
+    BreadAndBunsTabRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const BreadAndBunsTabScreen(),
+      );
+    },
+    DealsTabRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const DealsTabScreen(),
       );
     },
     HomeRoute.name: (routeData) {
@@ -55,6 +75,35 @@ abstract class _$AppRouter extends RootStackRouter {
 }
 
 /// generated route for
+/// [BakeryItemTabScreen]
+class BakeryItemTabRoute extends PageRouteInfo<BakeryItemTabRouteArgs> {
+  BakeryItemTabRoute({
+    Key? key,
+    List<PageRouteInfo>? children,
+  }) : super(
+          BakeryItemTabRoute.name,
+          args: BakeryItemTabRouteArgs(key: key),
+          initialChildren: children,
+        );
+
+  static const String name = 'BakeryItemTabRoute';
+
+  static const PageInfo<BakeryItemTabRouteArgs> page =
+      PageInfo<BakeryItemTabRouteArgs>(name);
+}
+
+class BakeryItemTabRouteArgs {
+  const BakeryItemTabRouteArgs({this.key});
+
+  final Key? key;
+
+  @override
+  String toString() {
+    return 'BakeryItemTabRouteArgs{key: $key}';
+  }
+}
+
+/// generated route for
 /// [BottomNavigationHandlerScreen]
 class BottomNavigationHandlerRoute extends PageRouteInfo<void> {
   const BottomNavigationHandlerRoute({List<PageRouteInfo>? children})
@@ -64,6 +113,34 @@ class BottomNavigationHandlerRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'BottomNavigationHandlerRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [BreadAndBunsTabScreen]
+class BreadAndBunsTabRoute extends PageRouteInfo<void> {
+  const BreadAndBunsTabRoute({List<PageRouteInfo>? children})
+      : super(
+          BreadAndBunsTabRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'BreadAndBunsTabRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [DealsTabScreen]
+class DealsTabRoute extends PageRouteInfo<void> {
+  const DealsTabRoute({List<PageRouteInfo>? children})
+      : super(
+          DealsTabRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'DealsTabRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

@@ -16,13 +16,6 @@ class AppWidget extends StatelessWidget {
         return MaterialApp.router(
           debugShowCheckedModeBanner: false,
           routerConfig: appRouter.config(),
-          /* theme: ThemeData(
-            bottomNavigationBarTheme: BottomNavigationBarThemeData(
-              backgroundColor: Colors.red,
-              selectedItemColor: Colors.white,
-              unselectedItemColor: Colors.grey,
-            ),
-          ), */
         );
       },
     );
